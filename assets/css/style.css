@@ -686,7 +686,7 @@
 
     .background-image {
       filter: brightness(1);
-      opacity: 0.8;
+      opacity: 1;
     }
 
     .hero h1 {
@@ -845,13 +845,13 @@
     }
 
     .project-card {
-      width: 90%;
+      width: 100%;
       max-width: 320px;
       padding: 1rem;
     }
     
     .project-card img {
-      width: 80%;
+      width: 100%;
       display: block;
       transition: filter 0.3s ease;
     }
@@ -865,7 +865,7 @@
     .project-card .overlay-text {
       font-size: 0.8rem;
       line-height: 2rem;
-      width:80%
+      width:100%;
     }
   
     .project-card.wide {
@@ -929,14 +929,10 @@
       top: 0;
       left: 0;
       z-index: -1;
-      opacity: 0.6;
     }
   
     .hero .logo {
-      width: 80%;
-      height: 8%;
-      margin-bottom: 1rem;
-      z-index: 1;
+      display:none;
     }
   
     .hero .content {
@@ -954,6 +950,12 @@
       margin-bottom: 2rem;
       line-height: 1.4;
       text-align: center;
+      color: #731F1F;
+      text-shadow:
+      -0.5px -0.5px 0 rgb(207, 178, 178),
+      0.5px -0.5px 0 rgb(207, 178, 178),
+      -0.5px  0.5px 0 rgb(207, 178, 178),
+      0.5px  0.5px 0 rgb(207, 178, 178);
     }
   
     .nav-links {
@@ -964,6 +966,12 @@
       width: 100%;
       z-index: 1;
     }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+  }
   
     .hero-link {
       font-size: 1.75rem;
@@ -1147,9 +1155,8 @@
     }
     
     .project-card {
-      width: 90%;
+      width: 100%;
       max-width: 320px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 1rem;
       overflow: hidden;
     }
@@ -1162,12 +1169,13 @@
   
     .project-card .overlay-text {
       font-size: 1rem;
-      padding: 1rem;
+      padding: 2rem;
       line-height: 2rem;
+
     }
   
     .project-card.wide {
-      width: 90%;
+      width: 100%;
     }
 
     .reach-section {
